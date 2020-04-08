@@ -20,14 +20,12 @@
 
 7. $ git commit
 * 설명 commit
-
-8. $ git status
-* commit 할 내역확인
 	* $ git commit -m "커밋메시지"를 입력하면 바로 Commit message를 입력가능
 	* 말머리: feat:, docs:, test:, refactor
+8. $ git status
+* commit 할 내역확인
 
 9. $ git push origin master
 * remote repository로 push
 * 첫 commit: $ git push -u origin master
-
 
