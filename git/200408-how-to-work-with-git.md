@@ -1,6 +1,6 @@
 # How to work with git
 
-## Contents
+########## Contents
 
 - Don't need to install git(Included in macOS)
 - Start project with git init
