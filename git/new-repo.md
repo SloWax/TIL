@@ -1,4 +1,4 @@
-#new repository
+# new repository
 
 1. $ git init
 * $ git remote add <별명> repository 주소
@@ -18,7 +18,7 @@
 6. $ git add README.md
 * index로 staging
 
-7.$ git commit
+7. $ git commit
 * 설명 commit
 
 8. $ git status
