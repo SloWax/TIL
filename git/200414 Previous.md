@@ -61,3 +61,16 @@ for (key,value) in dicFruit{
     }
 }
 
+
+### 임의의 정수 배열을 입력받았을 때 홀수는 배열의 앞부분, 짝수는 배열의 뒷부분에 위치하도록 구성된 새로운 배열을 반환하는 함수
+
+func dicNum(num: Int...) {
+    var result = [Int]()
+    for x in num{
+       if x%2 == 0{
+        result.append(x)
+       } else{
+        result.insert(x, at: 0)        }
+    }
+    print(result)
+}
