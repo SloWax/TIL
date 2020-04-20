@@ -20,19 +20,19 @@
 	      		self.height = height  
 	      }  
 	    		func change(width: Int, height: Int) {  
-	    				self.width = width  
-	    				self.height = height  
+	    			self.width = width  
+	    			self.height = height  
 	    		}  
 	    		func length() -> (Int, Int) {  
-	    				return (width, height)  
+	    			return (width, height)  
 	    		}  
 	    		func area() -> (Int) {  
-	    				return width * height  
+	    			return width * height  
 	    		}  
 	    	}  
       
-       	var rectangle1 = Rectangle(width: 10, height: 5)  
-       	var rectangle2 = Rectangle(width: 7, height: 7)  
+       		var rectangle1 = Rectangle(width: 10, height: 5)  
+       		var rectangle2 = Rectangle(width: 7, height: 7)  
 
 
 ## 2.  
@@ -50,20 +50,20 @@
 	 		var power: Bool  
 	
 		init(channel: Int, volume: Int, power: Bool) {  
-				self.channel = channel  
-				self.volume = volume  
-				self.power = power  
+			self.channel = channel  
+			self.volume = volume  
+			self.power = power  
 		}  
 		func change(channel: Int, volume: Int) {  
-				guard power == true else {  
-		  		return  
+			guard power == true else {  
+		  	return  
 		    }  
-				self.channel = channel  
-				self.volume = volume  
+			self.channel = channel  
+			self.volume = volume  
 		}  
 		func check() -> String {  
-				if power == true{  
-						return ("\(channel), \(volume)")  
+			if power == true{  
+			return ("\(channel), \(volume)")  
 			} else {  
 			return ("-1")  
 			}  
@@ -84,11 +84,11 @@
 			}  
 			func formula(formula: String) -> Int {  
 				if formula == "넓이" {  
-						return width * height  
+					return width * height  
 				} else if formula == "둘레" {  
-						return width * 2 + height * 2  
+					return width * 2 + height * 2  
 				} else {  
-						return 0  
+					return 0  
 				}  
 			}  
 		}  
@@ -105,11 +105,11 @@
 			}  
 			func formula(formula: String) -> Double {  
 				if formula == "둘레" {  
-						return 2 * 3.14 * radius  
+					return 2 * 3.14 * radius  
 				} else if formula == "넓이" {  
-						return 3.14*(radius*radius)  
+					return 3.14*(radius*radius)  
 				} else {  
-						return 0  
+					return 0  
 				}  
 			}  
 		}  
