@@ -11,28 +11,28 @@
 	- 정사각형 1개 속성: width = 7, height = 7  
 
 
-	    class Rectangle {  
-	      var width: Int  
-	      var height: Int  
-	        
-	      init(width:Int, height:Int) {  
-	      		self.width = width  
-	      		self.height = height  
-	      }  
-	    		func change(width: Int, height: Int) {  
-	    			self.width = width  
-	    			self.height = height  
-	    		}  
-	    		func length() -> (Int, Int) {  
-	    			return (width, height)  
-	    		}  
-	    		func area() -> (Int) {  
-	    			return width * height  
-	    		}  
-	    	}  
-      
-       		var rectangle1 = Rectangle(width: 10, height: 5)  
-       		var rectangle2 = Rectangle(width: 7, height: 7)  
+		    class Rectangle {  
+		      var width: Int  
+		      var height: Int  
+		        
+		      init(width:Int, height:Int) {  
+		      		self.width = width  
+		      		self.height = height  
+		      }  
+		    		func change(width: Int, height: Int) {  
+		    			self.width = width  
+		    			self.height = height  
+		    		}  
+		    		func length() -> (Int, Int) {  
+		    			return (width, height)  
+		    		}  
+		    		func area() -> (Int) {  
+		    			return width * height  
+		    		}  
+		    	}  
+      	
+       			var rectangle1 = Rectangle(width: 10, height: 5)  
+       			var rectangle2 = Rectangle(width: 7, height: 7)  
 
 
 ## 2.  
