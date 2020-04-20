@@ -11,28 +11,28 @@
 	- 정사각형 1개 속성: width = 7, height = 7  
 
 
-    class Rectangle {  
-      var width: Int  
-      var height: Int  
-        
-      init(width:Int, height:Int) {  
-      		self.width = width  
-      		self.height = height  
-      }  
-    		func change(width: Int, height: Int) {  
-    				self.width = width  
-    				self.height = height  
-    		}  
-    		func length() -> (Int, Int) {  
-    				return (width, height)  
-    		}  
-    		func area() -> (Int) {  
-    				return width * height  
-    		}  
-    	}  
+	    class Rectangle {  
+	      var width: Int  
+	      var height: Int  
+	        
+	      init(width:Int, height:Int) {  
+	      		self.width = width  
+	      		self.height = height  
+	      }  
+	    		func change(width: Int, height: Int) {  
+	    				self.width = width  
+	    				self.height = height  
+	    		}  
+	    		func length() -> (Int, Int) {  
+	    				return (width, height)  
+	    		}  
+	    		func area() -> (Int) {  
+	    				return width * height  
+	    		}  
+	    	}  
       
-    		var rectangle1 = Rectangle(width: 10, height: 5)  
-    		var rectangle2 = Rectangle(width: 7, height: 7)  
+       	var rectangle1 = Rectangle(width: 10, height: 5)  
+       	var rectangle2 = Rectangle(width: 7, height: 7)  
 
 
 ## 2.  
@@ -44,10 +44,10 @@
 5) 채널과 볼륨 정보를 확인했을 때 TV 전원이 꺼져있으면 -1 이 반환되도록 구현  
 
 
-	class TV {  
-		var channel: Int  
-		var volume: Int  
-		var power: Bool  
+	 	class TV {  
+	 		var channel: Int  
+	 		var volume: Int  
+	 		var power: Bool  
 	
 		init(channel: Int, volume: Int, power: Bool) {  
 				self.channel = channel  
@@ -67,49 +67,49 @@
 			} else {  
 			return ("-1")  
 			}  
+		    }  
 		}  
-	}  
 
 
 ## 3.  
 1) 사각형의 길이를 설정하는 초기화 메서드, 둘레와 넓이값을 구하는 메서드 구현  
 
 
-	class Square {  
+		class Square {  
 			var width: Int  
 			var height: Int  
 			init(width: Int, height:Int){  
-					self.width = width  
-					self.height = height  
+				self.width = width  
+				self.height = height  
 			}  
 			func formula(formula: String) -> Int {  
-					if formula == "넓이" {  
-							return width * height  
-					} else if formula == "둘레" {  
-							return width * 2 + height * 2  
-					} else {  
-							return 0  
-					}  
+				if formula == "넓이" {  
+						return width * height  
+				} else if formula == "둘레" {  
+						return width * 2 + height * 2  
+				} else {  
+						return 0  
+				}  
 			}  
-	}  
+		}  
 
 
 
 2) 원의 반지름을 설정하는 초기화 메서드, 둘레와 넓이값을 구하는 메서드 구현  
 
 
-	class Circle {  
+		class Circle {  
 			var radius: Double  
 			init(radius: Double){  
 			self.radius = radius  
 			}  
 			func formula(formula: String) -> Double {  
-					if formula == "둘레" {  
-							return 2 * 3.14 * radius  
-					} else if formula == "넓이" {  
-							return 3.14*(radius*radius)  
-					} else {  
-							return 0  
-					}  
+				if formula == "둘레" {  
+						return 2 * 3.14 * radius  
+				} else if formula == "넓이" {  
+						return 3.14*(radius*radius)  
+				} else {  
+						return 0  
+				}  
 			}  
-	}  
+		}  
