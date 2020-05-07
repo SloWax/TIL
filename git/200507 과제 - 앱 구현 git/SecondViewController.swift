@@ -22,8 +22,12 @@ class SecondViewController: UIViewController {
     }
     @IBAction func addcount(_sender: UIButton){
         if let firstVC = presentingViewController as? ViewController {
-            firstVC.count += 1
-            firstVC.countLable.text = "Count: \(firstVC.count)"
+            firstVC.dogCount += 1
+            firstVC.catCount += 1
+            firstVC.birdCount += 1
+            firstVC.dogLable.text = "Count: \(firstVC.dogCount)"
+            firstVC.catLable.text = "Count: \(firstVC.catCount)"
+            firstVC.birdLable.text = "Count: \(firstVC.birdCount)"
         }
     }
 

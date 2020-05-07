@@ -10,13 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var countLable: UILabel!
-    var count = 0
+    
+    @IBOutlet weak var dogLable: UILabel!
+    @IBOutlet weak var catLable: UILabel!
+    @IBOutlet weak var birdLable: UILabel!
+    var dogCount = 0
+    var catCount = 0
+    var birdCount = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        countLable.text = "Count: \(count)"
+        dogLable.text = "Count: \(dogCount)"
+        catLable.text = "Count: \(catCount)"
+        birdLable.text = "Count: \(birdCount)"
         
     }
     
@@ -27,10 +34,16 @@ class ViewController: UIViewController {
             else { return }
         
         if identifier == "Dog" {
+            dogCount += 1
+            dogLable.text = "Count: \(dogCount)"
             secondVC.myImage = UIImage(named: "Dog.jpeg")
         } else if identifier == "Cat" {
+            catCount += 1
+            catLable.text = "Count: \(catCount)"
             secondVC.myImage = UIImage(named: "Cat.jpeg")
         } else if identifier == "Bird"{
+            birdCount += 1
+            birdLable.text = "Count: \(birdCount)"
             secondVC.myImage = UIImage(named: "Bird.jpeg")
         } else {
             return
@@ -39,11 +52,11 @@ class ViewController: UIViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         super.shouldPerformSegue(withIdentifier: identifier, sender: sender)
-        if identifier == "Dog", 8 < count{
+        if identifier == "Dog", 8 < dogCount{
             return false
-        } else if identifier == "Cat", 10 < count{
+        } else if identifier == "Cat", 10 < catCount{
             return false
-        } else if identifier == "Bird", 15 < count{
+        } else if identifier == "Bird", 15 < birdCount{
             return false
         } else {
             return true
