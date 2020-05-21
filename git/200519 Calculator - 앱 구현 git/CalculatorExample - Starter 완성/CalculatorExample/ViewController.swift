@@ -19,7 +19,7 @@ final class ViewController: UIViewController {
     var sign:Int = 0
     var continuity:Bool = false
     var nonTouchResultClacu:Bool = false
-    var calcuCount:Int = 0
+    var calcuCount:Bool = false
     
     let formatter = NumberFormatter()
     
@@ -34,7 +34,7 @@ final class ViewController: UIViewController {
         if 15 <= String(nowValue).count {
             return
         }
-        if (0 < calcuCount), (nowValue != 0), (sign == 0) {
+        if calcuCount, (nowValue != 0), (sign == 0) {
             allClear()
         }
         nowValue == 0 ? (nowValue += Double(button.tag)) : (nowValue = nowValue * 10 + Double(button.tag))
@@ -60,7 +60,7 @@ final class ViewController: UIViewController {
             nowValue = oldValue
         }
         Calculate()
-        calcuCount += 1
+        calcuCount = true
         nonTouchResultClacu = false
         resultLable.text = formatter.string(from: result as NSNumber)
     }
@@ -91,6 +91,6 @@ final class ViewController: UIViewController {
         sign = 0
         continuity = false
         nonTouchResultClacu = false
-        calcuCount = 0
+        calcuCount = false
     }
 }
