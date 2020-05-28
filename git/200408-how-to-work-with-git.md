@@ -15,5 +15,3 @@
     - `$ git commit -m "{commit message}"`
     - `$ git push origin master`
 
-## TO DO
-
