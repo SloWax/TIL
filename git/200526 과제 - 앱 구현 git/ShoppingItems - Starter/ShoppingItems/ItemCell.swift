@@ -11,5 +11,8 @@ import UIKit
 
 final class ItemCell: UITableViewCell {
   
-  
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var countAdd: UIButton!
+    static let identifier: String = "ItemCell"
+    
 }
