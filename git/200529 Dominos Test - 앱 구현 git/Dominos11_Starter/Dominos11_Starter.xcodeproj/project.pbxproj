@@ -16,6 +16,8 @@
 		4FD504DF247CD3C3009BE623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD504DD247CD3C3009BE623 /* Main.storyboard */; };
 		4FD504E1247CD3C5009BE623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD504E0247CD3C5009BE623 /* Assets.xcassets */; };
 		4FD504E4247CD3C5009BE623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD504E2247CD3C5009BE623 /* LaunchScreen.storyboard */; };
+		6E6F9C0D249159FA00B690C7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F9C0C249159FA00B690C7 /* CategoryCell.swift */; };
+		6E6F9C102491614B00B690C7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6F9C0F2491614B00B690C7 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4FD504E0247CD3C5009BE623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FD504E3247CD3C5009BE623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FD504E5247CD3C5009BE623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E6F9C0C249159FA00B690C7 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		6E6F9C0F2491614B00B690C7 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			children = (
 				4FD504D7247CD3C3009BE623 /* AppDelegate.swift */,
 				4FD504D9247CD3C3009BE623 /* SceneDelegate.swift */,
+				6E6F9C0F2491614B00B690C7 /* Data.swift */,
+				6E6F9C0C249159FA00B690C7 /* CategoryCell.swift */,
 				4F607EAC247CF7820045C4B0 /* CategoryViewController.swift */,
 				4F607EAE247CF7C10045C4B0 /* ProductViewController.swift */,
 				4F607EB0247CF7CC0045C4B0 /* DetailViewController.swift */,
@@ -150,9 +156,11 @@
 				4FD504D8247CD3C3009BE623 /* AppDelegate.swift in Sources */,
 				4F607EB3247CF7D60045C4B0 /* WishListViewController.swift in Sources */,
 				4F607EAD247CF7820045C4B0 /* CategoryViewController.swift in Sources */,
+				6E6F9C0D249159FA00B690C7 /* CategoryCell.swift in Sources */,
 				4F607EB1247CF7CC0045C4B0 /* DetailViewController.swift in Sources */,
 				4F607EAF247CF7C10045C4B0 /* ProductViewController.swift in Sources */,
 				4FD504DA247CD3C3009BE623 /* SceneDelegate.swift in Sources */,
+				6E6F9C102491614B00B690C7 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
